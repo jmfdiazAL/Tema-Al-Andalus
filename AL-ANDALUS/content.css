@@ -246,7 +246,8 @@ dt.pbl-task-participants span{padding-left:32px;background:url(_cedec_pbl_partic
 }
 
 .external-link-img{padding:0 .3em;vertical-align:middle}
-body .exe-download-package-link a{background:#005591;text-shadow:1px 1px 1px #333;border-radius:0}
+body .exe-download-package-link a{background:#7aacd8;border-radius:0}
+body .exe-download-package-link a.hover{background:#005591;text-decoration:none}
 
 /* Tables (to review) */
 td p{margin:.6em 0}
@@ -257,17 +258,14 @@ td ul,td ol{margin-top:.6em;margin-bottom:.6em}
 img {
     margin: 0.5em;
 }
-
 .imagen_ampliable {
-    margin: 0.5em;
-    padding:0em 0.5em 0em 2em;
+    margin:0.5em;
+    padding:0 0 28px;
     background:url(./lupa.png) no-repeat bottom left;
 }
-
 a .imagen_ampliable {
     border: 0;
 }
-
 .titulo, .figcaption.header {
 	font-size: 1em;
     text-align: center;
@@ -421,7 +419,7 @@ table[align="center"] {
 	cursor: help; text-decoration: none;
 	position: relative;
 	color: inherit;
-	padding:0em 0em 0em 1.5em;background:url(./glosario.png) no-repeat top left;
+	padding:0em 0em 0em 1.5em;background:url(./glosario.png) no-repeat center left;
 }
 a.glosario:hover{ text-decoration:none; }
 .glosario span {
@@ -728,5 +726,6 @@ ol.lista_esquema { counter-reset: item }
 .exe-fx .fx-accordion-content{padding-top:1em}
 .exe-fx .fx-tab-content{padding-top:1.5em}
 div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-info,div.exe-block-success{padding:1em;margin:1em 0}
-.download-packageIdevice .exe-download-package-link a{background:#0087ff}
+.download-packageIdevice .exe-download-package-link a{background:#7aacd8;border-radius:0}
+.download-packageIdevice .exe-download-package-link a.hover{background:#005591;text-decoration:none}
 .exe-download-package-instructions a.cc{background:none;padding:0}

@@ -1,5 +1,6 @@
 var myTheme = {
-	init : function(){
+    init : function(){
+        // CEDEC
 		// Special links
 		var sLcounter = 0;
 		var nTw = $("#nodeTitle");
@@ -66,9 +67,27 @@ var myTheme = {
 			} else {
 				nav.removeClass('fixed');
 			}
-		});
-	},
-	rftTitle : function(){
+        });
+        
+        // FPD
+		var ie_v = $exe.isIE();
+        if (ie_v && ie_v<8) return false;
+        setTimeout(function(){
+            $(window).resize(function() {
+                myTheme.reset();
+            });
+        },1000);
+        var l = $('<p id="nav-toggler"><a href="#" onclick="myTheme.toggleMenu(this)" class="hide-nav" id="toggle-nav" title="'+$exe_i18n.hide+'">'+$exe_i18n.menu+'</a></p>');
+        $("#content").prepend(l);
+        var url = window.location.href;
+        url = url.split("?");
+        if (url.length>1){
+            if (url[1].indexOf("nav=false")!=-1) {
+                myTheme.hideMenu();
+            }
+        }
+    },
+    rftTitle : function(){
 		var isWebSite = $("body").hasClass("exe-web-site");
 		var h = $("#headerContent");
 		var t = h.text();
@@ -79,18 +98,18 @@ var myTheme = {
 		} else {
 			if (isWebSite) h.html("<a href='./index.html'>"+h.text()+"</a>");
 		}
-	},
+    },
 	hideMenu : function(){
-		$("#siteNav").hide();
+    	$("#siteNav").hide();
 		$(document.body).addClass("no-nav");
 		myTheme.params("add");
 		var tit = $exe_i18n.menu+" ("+$exe_i18n.show.toLowerCase()+")";
-		$("#toggle-nav").attr("class","show-nav").attr("title",tit);
+        $("#toggle-nav").attr("class","show-nav").attr("title",tit);
 	},
-	positionToggler : function(){
+    positionToggler : function(){
 		var header = $("#header");
 		if (header.length==1) $("#header-options").css("top",(header.height()+61)+"px")
-	},	
+    },
 	toggleMenu : function(e){
 		if (typeof(myTheme.isToggling)=='undefined') myTheme.isToggling = false;
 		if (myTheme.isToggling) return false;
@@ -123,8 +142,7 @@ var myTheme = {
 				myTheme.isToggling = false;
 			});
 			myTheme.params("delete");			
-		}
-		
+        }
 	},
 	param : function(e,act) {
 		if (act=="add") {
@@ -148,7 +166,7 @@ var myTheme = {
 			myTheme.param(this,act);
 		});
 	},
-	launchWindow : function(objAnchor, objEvent) {
+    launchWindow : function(objAnchor, objEvent) {
 		// Code origin: https://www.w3.org/TR/WCAG20-TECHS/SCR24.html
 		var iKeyCode, bSuccess=false;
 		if (objEvent && objEvent.type == 'keypress') {
@@ -159,8 +177,11 @@ var myTheme = {
 		bSuccess = window.open(objAnchor.href);
 		if (!bSuccess) return true;
 		return false;
-	},
-	common : {
+    },
+    reset : function() {
+        myTheme.toggleMenu();        
+    },
+    common : {
 		init : function(){
 			if ($("body").hasClass("exe-single-page")) {
 				// Open definition lists
@@ -203,9 +224,9 @@ var myTheme = {
 					this.onkeypress = function(event){ return myTheme.launchWindow(this, event) }
 				}
 			});
-		}
-	}
-}
+        }
+    }
+};
 
 $(function(){
 	myTheme.common.init();
