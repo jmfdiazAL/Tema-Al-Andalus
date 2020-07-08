@@ -1,33 +1,35 @@
 body{max-width:1280px;margin:0 auto;background:#FFF;padding:10px 0 0 0}
-#lbOverlay{background:#f3f3f3}
-#content{width:100%;margin:0 auto 10px auto;text-align:left;position:relative;padding-bottom:21px;background:#fff url(_cedec_left_column.gif) repeat-y 0 0}
+#lbOverlay{background:#7aacd8}
+#content{width:100%;margin:0 auto 10px auto;text-align:left;position:relative;padding-bottom:21px;background:#fff}
 body.no-nav,.no-nav #content{background:#fff}
-#main-wrapper{padding:0 20px 0 300px}
+#main-wrapper{padding:0 0 0 300px}
 .no-nav #main-wrapper{padding-left:20px}
-#main{width:100%;height:auto!important;height:200px;min-height:200px}
+#main{width:100%;height:auto!important;height:200px;min-height:200px;border-top: 10px solid #FFF}
 #header,#emptyHeader{border-top:none;border-radius:0;padding-right:210px}
-#nodeDecoration{padding:0;margin:0 0 10px 0;border:none;text-shadow:none;background:none;border-bottom:1px solid #EF801B;border-radius:0}
-#nodeTitle{padding:.8em 0 20px 0;color:#00AA89;font-weight:bold;letter-spacing:.5px;font-size:1.7em}
+#nodeDecoration{border-radius:2px;text-align:left;padding:1em 20px;margin-bottom:2em;
+	background:#7aacd8;
+	color:#FFF;letter-spacing:.5px}
+#nodeTitle{font-size:1.5em;margin:0;font-weight:bold;color:#FFF}
 #siteFooter{padding-left:300px}
 .no-nav #siteFooter{padding-left:20px}
 
 /* Navigation */
 #skipNav{text-align:center;padding-top:25px;font-size:.95em}
-#skipNav a{border-radius:2px;padding:2px 6px 3px 6px;background:#EF801B}
-#siteNav{width:280px;float:left;padding-right:20px;margin:0 0 70px 0;border-top:10px solid #FFF}
+#skipNav a{border-radius:2px;padding:2px 6px 3px 6px;background:#7aacd8}
+#siteNav{width:280px;float:left;padding-right:20px;margin:0 0 20px 0;border-top:10px solid #FFF}
 #siteNav.fixed{position:fixed;top:0}
 #siteNav ul,#siteNav li{margin:0;padding:0;list-style:none}
-#siteNav a{font-size:.95em;display:block;padding:7px 10px 7px 20px;border-bottom:1px solid #f3f3f3;color:#555;background:#f3f3f3}
+#siteNav a{font-size:.95em;display:block;padding:7px 10px 7px 20px;color:#FFF;background:#8fb5cf}
 #siteNav .main-node{padding-top:20px}
-#siteNav a:hover,#siteNav a:focus{color:#EF801B;background:#fff}
-#siteNav ul ul a{padding-left:30px;font-size:.9em;background:#f9f9f9}
-#siteNav ul ul a:hover,#siteNav ul ul a:focus{color:#00AA89}
-#siteNav .active{color:#000;text-decoration:underline}
+#siteNav a:hover,#siteNav a:focus{color:#fff;background:#005591;text-decoration:none}
+#siteNav ul ul a{padding-left:30px;font-size:.9em;background:#7aacd8}
+#siteNav ul ul a:hover,#siteNav ul ul a:focus{color:#fff}
+#siteNav .active{color:#fff;;background:#005591}
 #siteNav .other-section{display:none}
 #siteNav ul ul ul a{padding-left:55px}
-#siteNav .package-link{background:#A6A4A3;text-transform:uppercase;color:#FFF;margin:0 1px}
-#siteNav .active.package-link{background:#83807E}
-#siteNav .package-link:hover,#siteNav .package-link:focus{background:#6B6866;color:#FFF}
+#siteNav .package-link{background:#7aacd8;text-transform:uppercase;color:#FFF;margin:0 1px}
+#siteNav .active.package-link{background:#7aacd8}
+#siteNav .package-link:hover,#siteNav .package-link:focus{background:#005591;color:#FFF}
 #siteNav .last-content-link{padding-bottom:15px}
 
 /* Search bar */
@@ -43,8 +45,8 @@ body.no-nav,.no-nav #content{background:#fff}
 .pagination{padding-top:20px;text-align:right;font-size:.95em}
 .pagination .sep{display:none}
 .pagination a{color:#FFF}
-#bottomPagination a{color:#EF801B}
-#bottomPagination a:hover,#bottomPagination a:focus{color:#6B6866}
+#bottomPagination a{color:#005591}
+#bottomPagination a:hover,#bottomPagination a:focus{color:#005591}
 #topPagination{position:absolute;top:-7px;width:100%;right:20px}
 #content .page-counter{margin:0}
 #topPagination .page-counter{color:#FFF}
@@ -53,7 +55,7 @@ body.no-nav,.no-nav #content{background:#fff}
 .pagination .next{margin-left:20px}
 #topPagination .pagination{border:none;text-align:right}
 #bottomPagination{padding:13px 20px 0 300px;min-height:5em}
-#bottomPagination .pagination{border-top:1px solid #EF801B}
+#bottomPagination .pagination{border-top:1px solid #7aacd8}
 .no-nav #bottomPagination{padding-left:20px}
 .page-counter{padding:5px 0;display:inline-block}
 /* Autoclear */
