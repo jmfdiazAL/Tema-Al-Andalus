@@ -39,9 +39,9 @@ text-transform:uppercase} /* Header is also in single page */
 #nodeDecoration{border-radius:2px;text-align:left;padding:1em 20px;margin-bottom:2em;
 background:#7aacd8;
 color:#FFF;letter-spacing:.5px}
-#nodeTitle{font-size:1.5em;margin:0;font-weight:bold;color:#FFF}
+#nodeTitle{font-size:1.5em;margin:0;font-weight:normal;color:#FFF}
 /* .nodeTitle when single page */
-.nodeTitle{padding:.1em 0 .6em 0;border-bottom:1px solid #7aacd8;margin:1em 0 0 0;color:#005591;font-weight:bold;letter-spacing:.5px;font-size:1.7em}
+.nodeTitle{padding:.1em 0 .6em 0;border-bottom:1px solid #7aacd8;margin:1em 0 0 0;color:#005591;font-weight:normal;letter-spacing:.5px;font-size:1.7em}
     
 #headerContent span{display:block;font-size:.6em}
 #headerContent .sep{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
@@ -51,6 +51,8 @@ h3{font-size:1.3em;color:#7aacd8;letter-spacing:.5px}
 ol,ul{color:#000;font-size:1em}
 li{margin-top:.2em;margin-bottom:.2em}
 li ol,li ul{margin-top:.5em;margin-bottom:.5em}
+/* Experimental! Funciona bien en Firefox */
+li::marker{color:#7aacd8}
 #main h4{font-size:1.2em}
 #main h5{font-size:1.1em}
 .iDevice{margin:1em 0 2em 0}
@@ -134,6 +136,8 @@ li{list-style-position:outside}
 .toggle-idevice .show-idevice{background-position:0 0}
 .toggle-em1 .show-idevice{background-position:-23px 0}
 .toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+/* Para los iDevices sin título */
+.toggle-idevice.toggle-em0{display: none}
 /* eXe < 2.1 */
 .iDevice a,#siteFooter a,#packageLicense a,.toggle-idevice a{text-decoration:underline}
 .iDevice a:hover,#siteFooter a:hover,#packageLicense a:hover,.toggle-idevice a:hover{text-decoration:none}
@@ -492,7 +496,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_orientacionesfpd .iDeviceTitle {
     color: #612413;
-    font-weight: bold;
 }
 .emphasis_orientacionesfpd {
     background-color: #FADAC0;
@@ -510,7 +513,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_parasabermasfpd .iDeviceTitle {
     color: #66521D;
-    font-weight: bold;
 }
 .emphasis_parasabermasfpd {
     background-color: #FBFCD7;
@@ -528,7 +530,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_debesconocerfpd .iDeviceTitle {
     color: #491057;
-    font-weight: bold;
 }
 .emphasis_debesconocerfpd {
     background-color: #F3D8FA;
@@ -546,7 +547,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_citasparapensarfpd .iDeviceTitle {
     color: #5E2A0D;
-    font-weight: bold;
 }
 .emphasis_citasparapensarfpd {
     background-color: #F1D8C8;
@@ -564,7 +564,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_recomendacionfpd .iDeviceTitle {
     color: #592411;
-    font-weight: bold;
 }
 .emphasis_recomendacionfpd {
     background-color: #F2E8B1;
@@ -582,7 +581,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_autoevaluacionfpd .iDeviceTitle {
     color: #044085;
-    font-weight: bold;
 }
 .emphasis_autoevaluacionfpd {
     background-color: #DEEDFA;
@@ -609,7 +607,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_casopracticofpd .iDeviceTitle {
     color: #236122;
-    font-weight: bold;
 }
 .emphasis_casopracticofpd {
     background-color: #E2F7D2;
@@ -627,7 +624,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_reflexionfpd .iDeviceTitle {
     color: #660F0F;
-    font-weight: bold;
 }
 .emphasis_reflexionfpd{
     background-color: #F0D3D3;
@@ -653,7 +649,6 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 #main .emphasis_ejercicioresueltofpd .iDeviceTitle {
     color: #0C3052;
-    font-weight: bold;
 }
 .emphasis_ejercicioresueltofpd
 {
@@ -678,6 +673,9 @@ div.pp_default .pp_nav .currentTextHolder {
 }
 
 /*Destacado*/
+.iDevice_destacadofpd .iDevice_header{
+    display: none;
+}
 .iDevice_destacadofpd {
     background: #C3DCF7;
     color: #153152;
