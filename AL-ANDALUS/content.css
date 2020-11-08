@@ -316,13 +316,11 @@ a .imagen_ampliable {
 }
 pre {
 	color: #000000;
-	font-size: 12px;
-	font-family: "DejaVu Sans Mono";
+	font-family: "courier new", courier, monospace;
 	line-height: 20px;
 }
 * code {
-	font-size: 12px;
-	font-family: "DejaVu Sans Mono";
+	font-family: "courier new", courier, monospace;
 	font-weight: bold;
 }
 
