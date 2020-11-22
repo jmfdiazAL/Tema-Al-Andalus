@@ -184,7 +184,9 @@ li{list-style-position:outside}
 .exe-block-danger{padding:0 1em 0 55px;background:#FEF0EF url(_cedec_icon_danger.png) no-repeat 17px .9em;margin:1.5em 0}
 .exe-block-info{padding:0 1em 0 55px;background:#E1F1F9 url(_cedec_icon_info.png) no-repeat 17px .9em;margin:1.5em 0}
 .exe-block-success{padding:0 1em 0 55px;background:#E5F3E0 url(_cedec_icon_success.png) no-repeat 17px .9em;margin:1.5em 0}
-p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success{padding:1em 1em 1em 55px}
+.exe-block-forbidden{padding:0 1em 0 55px;background:#FEF0EF url(_cedec_icon_forbidden.png) no-repeat 17px .9em;margin:1.5em 0}
+.exe-block-idea{padding:0 1em 0 55px;background:#EFEFEF url(_cedec_icon_idea.png) no-repeat 17px .9em;margin:1.5em 0}
+p.exe-block-warning,.p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success,p.exe-block-forbidden,p.exe-block-idea{padding:1em 1em 1em 55px}
 
 /* Quote With Authorship */
 .styled-qc{font-family:"Open Sans",​Arial,Helvetica,​sans-serif;font-size:1.1em}
@@ -243,8 +245,8 @@ dt.pbl-task-participants span{padding-left:32px;background:url(_cedec_pbl_partic
 		border-bottom:0;
 		padding-bottom:0
 	}	
-	.exe-block-warning,.exe-block-alert,.exe-block-danger,.exe-block-info,.exe-block-success{padding:0 1em;max-width:92%;margin-left:auto;margin-right:auto}
-	p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success{padding:1em}
+	.exe-block-warning,.exe-block-alert,.exe-block-danger,.exe-block-info,.exe-block-success,.exe-block-forbidden,.exe-block-idea{padding:0 1em;max-width:92%;margin-left:auto;margin-right:auto}
+	p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success,p.exe-block-forbidden,p.exe-block-idea{padding:1em}
 	#theme-iframe-text{display:block}
 	#theme-iframe-indicator,#theme-iframe{display:none!important}
 }
@@ -723,7 +725,7 @@ ol.lista_esquema { counter-reset: item }
 
 .exe-fx .fx-accordion-content{padding-top:1em}
 .exe-fx .fx-tab-content{padding-top:1.5em}
-div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-info,div.exe-block-success{padding:1em;margin:1em 0}
+div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-info,div.exe-block-success,div.exe-block-forbidden,div.exe-block-idea{padding:1em;margin:1em 0}
 .download-packageIdevice .exe-download-package-link a{background:#7aacd8;border-radius:0}
 .download-packageIdevice .exe-download-package-link a.hover{background:#005591;text-decoration:none}
 .exe-download-package-instructions a.cc{background:none;padding:0}
