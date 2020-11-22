@@ -729,3 +729,10 @@ div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-inf
 .download-packageIdevice .exe-download-package-link a{background:#7aacd8;border-radius:0}
 .download-packageIdevice .exe-download-package-link a.hover{background:#005591;text-decoration:none}
 .exe-download-package-instructions a.cc{background:none;padding:0}
+
+/*forbidden e idea*/
+.exe-block-forbidden{color:#973C3B;border:1px solid #F3DADD;border-radius:4px}
+.exe-block-forbidden a{color:#6D1211}
+
+.exe-block-idea{color:#6F6F6F;border:1px solid #F3F3F3;border-radius:4px}
+.exe-block-idea a{color:#6D6D6D}
