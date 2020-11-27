@@ -262,10 +262,10 @@ td ul,td ol{margin-top:.6em;margin-bottom:.6em}
 /* FPD */
 /*Imágenes*/
 img {
-    margin: 0.5em;
+    margin: 0em;
 }
 .imagen_ampliable {
-    margin:0.5em;
+    margin:0em;
     padding:0 0 1.2em;
     background:url(./lupa.png) no-repeat bottom left;
 }
