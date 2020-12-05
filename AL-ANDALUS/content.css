@@ -55,7 +55,7 @@ li ol,li ul{margin-top:.5em;margin-bottom:.5em}
 li::marker{color:#7aacd8}
 #main h4{font-size:1.2em}
 #main h5{font-size:1.1em}
-.iDevice{margin:1em 0 2em 0}
+.iDevice{margin:1em 0 1em 0}
 
 /* iDevice icons */
 .iDevice_header{background:#F5F5F5 url(icon_think.png) no-repeat 20px 15px;padding:20px 0 20px 100px;position:relative;border-top-left-radius:2px;border-top-right-radius:2px}
@@ -157,8 +157,8 @@ li{list-style-position:outside}
 .exe-figure{margin:2.5em 0}
 .position-center{margin:2.5em auto}
 .position-right{margin:2.5em 0 2.5em auto}
-.float-left{margin:.5em 1.5em 1em 0}
-.float-right{float:right;margin:.5em 0 1em 2em}
+.float-left{margin:.5em .5em 1em .5em}
+.float-right{float:right;margin:.5em .5em 1em .5em}
 .figcaption{font-size:.95em;text-align:center}
 
 #printNode{margin:-14px 7px 0 0;text-align:right}
