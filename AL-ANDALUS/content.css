@@ -55,10 +55,10 @@ li ol,li ul{margin-top:.5em;margin-bottom:.5em}
 li::marker{color:#7aacd8}
 #main h4{font-size:1.2em}
 #main h5{font-size:1.1em}
-.iDevice{margin:1em 0 2em 0}
+.iDevice{margin:1em 0 1em 0}
 
 /* iDevice icons */
-.iDevice_header{background:#F5F5F5 url(icon_think.png) no-repeat 20px 15px;padding:20px 0 30px 105px;position:relative;border-top-left-radius:2px;border-top-right-radius:2px}
+.iDevice_header{background:#F5F5F5 url(icon_think.png) no-repeat 20px 15px;padding:20px 0 20px 100px;position:relative;border-top-left-radius:2px;border-top-right-radius:2px}
 .hidden-idevice .iDevice_header{border-radius:2px}
 .iDevice_header.iDevice_header_noIcon{padding:5px 20px}
 .hidden-idevice .iDevice_header.iDevice_header_noIcon{padding-bottom:20px}
@@ -80,9 +80,9 @@ li::marker{color:#7aacd8}
 .ClozeIdevice .iDevice_header{background-image:url(icon_interactive.png)}
 
 #main .iDeviceTitle{font-size:1.4em;display:inline;font-weight:normal;vertical-align:top;top:.25em;color:#000;line-height:2em;padding-right:55px;letter-spacing:1px}
-.iDevice_content{overflow-x:hidden;overflow-y:auto}
+.iDevice_content{overflow-x: clip; overflow-y: auto;}
 /* iDevice content */
-.iDevice_inner{padding:10px 20px;border:1px solid #F5F5F5;background:#F5F5F5;border-radius:2px}
+.iDevice_inner{padding:10px 20px;border:1px solid #F5F5F5;background:#F5F5F5;border-radius:2px;overflow:auto;}
 
 /* With shadow */
 /* Interactive activities */
@@ -157,8 +157,8 @@ li{list-style-position:outside}
 .exe-figure{margin:2.5em 0}
 .position-center{margin:2.5em auto}
 .position-right{margin:2.5em 0 2.5em auto}
-.float-left{margin:.5em 1.5em 1em 0}
-.float-right{float:right;margin:.5em 0 1em 2em}
+.float-left{margin:.5em .5em 1em .5em}
+.float-right{float:right;margin:.5em .5em 1em .5em}
 .figcaption{font-size:.95em;text-align:center}
 
 #printNode{margin:-14px 7px 0 0;text-align:right}
@@ -184,7 +184,9 @@ li{list-style-position:outside}
 .exe-block-danger{padding:0 1em 0 55px;background:#FEF0EF url(_cedec_icon_danger.png) no-repeat 17px .9em;margin:1.5em 0}
 .exe-block-info{padding:0 1em 0 55px;background:#E1F1F9 url(_cedec_icon_info.png) no-repeat 17px .9em;margin:1.5em 0}
 .exe-block-success{padding:0 1em 0 55px;background:#E5F3E0 url(_cedec_icon_success.png) no-repeat 17px .9em;margin:1.5em 0}
-p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success{padding:1em 1em 1em 55px}
+.exe-block-forbidden{padding:0 1em 0 55px;background:#FEF0EF url(_cedec_icon_forbidden.png) no-repeat 17px .9em;margin:1.5em 0}
+.exe-block-idea{padding:0 1em 0 55px;background:#EFEFEF url(_cedec_icon_idea.png) no-repeat 17px .9em;margin:1.5em 0}
+p.exe-block-warning,.p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success,p.exe-block-forbidden,p.exe-block-idea{padding:1em 1em 1em 55px}
 
 /* Quote With Authorship */
 .styled-qc{font-family:"Open Sans",​Arial,Helvetica,​sans-serif;font-size:1.1em}
@@ -243,8 +245,8 @@ dt.pbl-task-participants span{padding-left:32px;background:url(_cedec_pbl_partic
 		border-bottom:0;
 		padding-bottom:0
 	}	
-	.exe-block-warning,.exe-block-alert,.exe-block-danger,.exe-block-info,.exe-block-success{padding:0 1em;max-width:92%;margin-left:auto;margin-right:auto}
-	p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success{padding:1em}
+	.exe-block-warning,.exe-block-alert,.exe-block-danger,.exe-block-info,.exe-block-success,.exe-block-forbidden,.exe-block-idea{padding:0 1em;max-width:92%;margin-left:auto;margin-right:auto}
+	p.exe-block-warning,p.exe-block-alert,p.exe-block-danger,p.exe-block-info,p.exe-block-success,p.exe-block-forbidden,p.exe-block-idea{padding:1em}
 	#theme-iframe-text{display:block}
 	#theme-iframe-indicator,#theme-iframe{display:none!important}
 }
@@ -263,7 +265,7 @@ img {
     margin: 0.5em;
 }
 .imagen_ampliable {
-    margin:0.5em;
+    margin:0em;
     padding:0 0 1.2em;
     background:url(./lupa.png) no-repeat bottom left;
 }
@@ -316,13 +318,11 @@ a .imagen_ampliable {
 }
 pre {
 	color: #000000;
-	font-size: 12px;
-	font-family: "DejaVu Sans Mono";
+	font-family: "courier new", courier, monospace;
 	line-height: 20px;
 }
 * code {
-	font-size: 12px;
-	font-family: "DejaVu Sans Mono";
+	font-family: "courier new", courier, monospace;
 	font-weight: bold;
 }
 
@@ -725,7 +725,14 @@ ol.lista_esquema { counter-reset: item }
 
 .exe-fx .fx-accordion-content{padding-top:1em}
 .exe-fx .fx-tab-content{padding-top:1.5em}
-div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-info,div.exe-block-success{padding:1em;margin:1em 0}
+div.exe-block-warning,div.exe-block-alert,div.exe-block-danger,div.exe-block-info,div.exe-block-success,div.exe-block-forbidden,div.exe-block-idea{padding:1em;margin:1em 0}
 .download-packageIdevice .exe-download-package-link a{background:#7aacd8;border-radius:0}
 .download-packageIdevice .exe-download-package-link a.hover{background:#005591;text-decoration:none}
 .exe-download-package-instructions a.cc{background:none;padding:0}
+
+/*forbidden e idea*/
+.exe-block-forbidden{color:#973C3B;border:1px solid #F3DADD;border-radius:4px}
+.exe-block-forbidden a{color:#6D1211}
+
+.exe-block-idea{color:#6F6F6F;border:1px solid #F3F3F3;border-radius:4px}
+.exe-block-idea a{color:#6D6D6D}
