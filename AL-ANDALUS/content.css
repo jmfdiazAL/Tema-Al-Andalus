@@ -157,8 +157,8 @@ li{list-style-position:outside}
 .exe-figure{margin:2.5em 0}
 .position-center{margin:2.5em auto}
 .position-right{margin:2.5em 0 2.5em auto}
-.float-left{margin:.5em .5em 1em .5em}
-.float-right{float:right;margin:.5em .5em 1em .5em}
+.float-left{margin:.5em 1.5em 1em 0}
+.float-right{float:right;margin:.5em 0 1em 1.5em}
 .figcaption{font-size:.95em;text-align:center}
 
 #printNode{margin:-14px 7px 0 0;text-align:right}
@@ -261,9 +261,6 @@ td ul,td ol{margin-top:.6em;margin-bottom:.6em}
 
 /* FPD */
 /*Imágenes*/
-img {
-    margin: 0.5em;
-}
 .imagen_ampliable {
     margin:0em;
     padding:0 0 1.2em;
